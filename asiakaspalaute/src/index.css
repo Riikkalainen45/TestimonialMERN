@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1 {
+  color: rgb(102, 27, 199);
+}
+.arvostelut {
+  width: 90vw;
+  max-width: 2000px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 780px) {
+  .arvostelut {
+    grid-template-columns: repeat(3, 1fr);
+    /*align-items: start;*/
+  }
+}
+
+.containerPilvi {
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/18/55/thinking-153993_960_720.png');
+  background-size: 600px 600px;
+  position: relative;
+  text-align: center;
+  color: rgb(102, 27, 199);
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 800px;
+  display: grid;
+  gap: 2rem;
+}
+.item {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  max-width: var(--fixed-width);
+  margin: 5rem 10rem;
+  align-items: center;
+  /*  border-radius: var(--radius); */
+  z-index: 999;
+}
+.container {
+  background-color: lightblue;
+}
+.backgroundPalaute {
+  background-image: url(./images/BGiso.png);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 800px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+}
+.button {
+  background-color: rgb(102, 27, 199);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(102, 27, 199);
+  color: white;
+}
+
+.random-btn {
+  background-color: rgb(102, 27, 199);
+  color: white;
+}
+.next-btn {
+  background-color: rgb(102, 27, 199);
+  color: white;
+}
+.prev-btn {
+  background-color: rgb(102, 27, 199);
+  color: white;
+}
+
+.containerForm {
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/21/18/34/clouds-1923545__340.png');
+  text-align: center;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 2rem;
+  position: relative;
+}
+.backgroundEtusivu {
+  background-image: url('https://cdn.pixabay.com/photo/2017/12/01/08/52/bokeh-2990426_960_720.jpg');
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-5);
+}
+input[type='radio'] {
+  display: none;
+}
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}
+.p {
+  font-size: 30px;
+}
+.tekstiOsa {
+  width: 600px;
+  text-align: center;
+  background-color: lightblue;
+  border: solid 2px rgb(102, 27, 199);
+  border-radius: 80%;
+  padding: 100px 60px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.tekstiOsa2 {
+  width: 600px;
+  text-align: center;
+  background-color: rgb(57, 190, 235);
+  border: solid 2px rgb(102, 27, 199);
+  border-radius: 80%;
+  padding: 100px 50px;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
